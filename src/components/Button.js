@@ -6,9 +6,7 @@ export default function Button({className, content, path}){
     const navigate = useNavigate();
     return (
         <StyledButton className={className} 
-            onClick={() =>{
-                if(path !== '/') navigate(`/country/${path}`); 
-                else navigate('/');}}
+            onClick={() => navigate(`${path}`)}
         >
             {content}
         </StyledButton>

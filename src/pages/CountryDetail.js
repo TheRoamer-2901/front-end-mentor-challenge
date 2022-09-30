@@ -75,7 +75,8 @@ export default function CountryDetail() {
                             <span>Border Countries:</span>
                         </div>
                         <div className='border-list'>
-                            {borderList.length ? borderList : <Button className='btn' content="none" />}
+                            {borderList.length ? borderList : 
+                            <Button className='btn' content="none" path='/country/notfound' />}
                         </div>
                     </StyledFlex>
                 </div>   
