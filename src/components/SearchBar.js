@@ -20,6 +20,10 @@ export default function SearchBar() {
   let searchResult = matchedCountry.length 
     ? matchedCountry.map((country, index) => 
         <p 
+          onClick={() => {
+            setExpanded(false);
+            setSearchValue(country.name.common);
+          }}
           key={index}
           className={searchIndex === index ? "selected" : ""}
         >
